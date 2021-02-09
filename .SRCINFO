@@ -1,8 +1,8 @@
 pkgbase = gnome-shell-extension-tray-icons-reloaded-git
 	pkgdesc = Shows legacy tray icons on top.
-	pkgver = 11+0+g3d726e0
+	pkgver = 11+4+g614228e
 	pkgrel = 1
-	url = https://extensions.gnome.org/extension/1031/topicons/
+	url = https://github.com/MartinPL/Tray-Icons-Reloaded
 	arch = any
 	groups = gnome-shell-extensions
 	license = GPL
@@ -10,7 +10,7 @@ pkgbase = gnome-shell-extension-tray-icons-reloaded-git
 	depends = gnome-shell
 	provides = gnome-shell-extension-tray-icons-reloaded
 	conflicts = gnome-shell-extension-tray-icons-reloaded
-	source = git+https://github.com/MartinPL/Tray-Icons-Reloaded.git
+	source = gnome-shell-extension-tray-icons-reloaded::git+https://github.com/MartinPL/Tray-Icons-Reloaded.git
 	sha256sums = SKIP
 
 pkgname = gnome-shell-extension-tray-icons-reloaded-git
