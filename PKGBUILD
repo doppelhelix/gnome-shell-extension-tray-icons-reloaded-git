@@ -21,8 +21,13 @@ pkgver() {
 	git describe --tags --long | sed 's/^v//; s/-/+/g'
 }
 
-package() {
+build() {
   cd "${srcdir}/${pkgname%-git}"
+  make _build
+}
+
+package() {
+  cd "${srcdir}/${pkgname%-git}/_build"
 	local uuid=$(grep -Po '(?<="uuid": ")[^"]*' metadata.json)
 	local destdir="$pkgdir/usr/share/gnome-shell/extensions/$uuid"
 	install -dm755 "$destdir"
